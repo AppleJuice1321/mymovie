@@ -40,5 +40,8 @@ export default function Artists() {
 
   console.log(artist)
 
-  return <></>;
+  return (
+  <>
+  </>
+  );
 }
