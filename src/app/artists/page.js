@@ -5,37 +5,37 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Artists() {
-  const [searchKey, setSearchKey] = useState("");
-  const [artist, setArtist] = useState({});
+  // const [searchKey, setSearchKey] = useState("");
+  // const [artist, setArtist] = useState({});
 
-  const ACCESS_TOKEN =
-    "BQBlmuL4FCTxco2N4OJrNl981L_aW9Ei3Ip0t3GjEknoHGcyeMQcxxfSWmDxItXtQmE0xxH0o1FS1ibf69-y5vl1xS96tBuDpnaZXd2IDSgrmFrvkV_Fr9KRq4EfkaZKuac-1xW98TLwPSuUd7mxA84qilMBx3E2kx9-tC7F";
+  // const ACCESS_TOKEN =
+  //   "BQBOZBoFDnVKuxyVP6vKfhLBIiamVa2r0kYygoDZf72hqmxxB82RYW32llDY-_2Sb6nY_13uYZjop_dPpYbB_5MCQDIP5S3I3SiBJTA7EimE3JoGTW8UkyLZMky17BLLX6i8uWcnGm72FZM1wtx-Kk1ssVUXV_6lUlBY8tyt";
 
-  useEffect(() => {
-    const getArtist = async () => {
-      try {
-        const RESPONSE = await axios.get(
-          "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg",
-          {
-            headers: {
-              Authorization: "Bearer " + ACCESS_TOKEN,
-            },
-            // params: {
-            //   q: searchKey,
-            //   type: "artist",
-            // },
-          }
-        );
-        setArtist(RESPONSE.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
+  // useEffect(() => {
+  //   const getArtist = async () => {
+  //     try {
+  //       const RESPONSE = await axios.get(
+  //         "https://api.spotify.com/v1/artists/0TnOYISbd1XYRBk9myaseg",
+  //         {
+  //           headers: {
+  //             Authorization: "Bearer " + ACCESS_TOKEN,
+  //           },
+  //           // params: {
+  //           //   q: searchKey,
+  //           //   type: "artist",
+  //           // },
+  //         }
+  //       );
+  //       setArtist(RESPONSE.data);
+  //     } catch (err) {
+  //       console.log(err);
+  //     }
+  //   };
 
-    getArtist();
-  }, []);
+  //   getArtist();
+  // }, []);
 
-  console.log(artist);
+  // console.log(artist);
 
   return (
   

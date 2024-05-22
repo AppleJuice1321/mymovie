@@ -10,7 +10,6 @@ export default function Intro() {
   useEffect(() => {
       setInterval(() => {
         router.push("/login")
-
       }, 3000)
   },[])
 
